@@ -1,0 +1,425 @@
+<!DOCTYPE HTML>
+
+<html>
+    
+    <meta charset="utf-8">
+    
+    <head>
+        <script src="web-projekts.js"></script>
+        <link type="text/css" rel="stylesheet" href="web-projekts.css">
+        <title>SporTests</title>
+
+    </head>
+<body>
+
+<div id="navigacija">
+    <div id="timer_minutes"></div>
+    <input type="button" class="izvPoga" value="1" onclick="Question(1)">
+    <input type="button" class="izvPoga" value="2" onclick="Question(2)">
+    <input type="button" class="izvPoga" value="3" onclick="Question(3)">
+    <input type="button" class="izvPoga" value="4" onclick="Question(4)">
+    <input type="button" class="izvPoga" value="5" onclick="Question(5)">
+    <input type="button" class="izvPoga" value="6" onclick="Question(6)">
+    <input type="button" class="izvPoga" value="7" onclick="Question(7)">
+    <input type="button" class="izvPoga" value="8" onclick="Question(8)">
+    <input type="button" class="izvPoga" value="9" onclick="Question(9)">
+    <input type="button" class="izvPoga" value="10" onclick="Question(10)">
+    <input type="button" class="izvPoga" value="11" onclick="Question(11)">
+    <input type="button" class="izvPoga" value="12" onclick="Question(12)">
+    <input type="button" class="izvPoga" value="13" onclick="Question(13)">
+    <input type="button" class="izvPoga" value="14" onclick="Question(14)">
+    <input type="button" class="izvPoga" value="15" onclick="Question(15)">
+    <input type="button" class="izvPoga" value="R" onclick="Question(16)">
+</div>
+
+<div id="tests">
+    <div id="sakums" class="bloks">
+        <h1>SporTests</h1>
+        <h2>Un ko tu zini par sportu?</h2>
+        <p>Bieži vien var dzirdēt daudzus cilvēkus uzdodam sevi par "sporta guru".
+            Iespējams pats kādreiz esi par tādu uzdevies.
+            Izpildi šo testu, lai pārliecinātos par to, kādas ir tavas sporta zināšanas</p>
+        Testa noteikumi
+        <ul>
+            <li>Testā ir 15 jautājumi</li>
+            <li>Laika limits: 30 minūtes</li>
+            <li>Testā ir iespējams brīvi pārvietoties un atgriezties pie iepriekšējām atbildēm, lai tās labotu</li>
+        </ul>
+        <br>
+        <input id="sakumaPoga" type="button" value="Mēģināt izpildīt testu" onclick="saktTestu()">
+    </div>
+ <div class="jaut" id="jaut1">
+        <h4>1.jautājums</h4>
+        Kuru kontinentu simbolizē katrs no olimpiskā karoga gredzeniem?<br><br>
+        <img src="https://i.ibb.co/N2VssKj/Screenshot-2021-05-27-at-15-31-17.png" alt="olimpiskais karogs" id="img1">
+        <form name="forma1">
+            <label for id="k1">Zils:</label>
+            <input id="k1" type="text" maxlength="50">
+            <br>
+            <label for id="k2">Melns:</label>
+            <input id="k2" type="text" maxlength="50">
+            <br>
+            <label for id="k3">Sarkans:</label>
+            <input id="k3" type="text" maxlength="50">
+            <br>
+            <label for id="k4">Dzeltens:</label>
+            <input id="k4" type="text" maxlength="50">
+            <br>
+            <label for id="k5">Zaļš:</label>
+            <input id="k5" type="text" maxlength="50">
+            <br>
+        </form><br>
+        <input type="button" class="nextQ" value="Nākamais jautājums" onclick="nextQuestion('jaut1')">
+    </div>
+
+    <div class="jaut" id="jaut2">
+        <h4>2.jautājums</h4>
+        Kuri no šiem sporta veidiem nav iekļauts/iekļauti olimpiskajās spēlēs?
+        <br><br>
+        <div id="check1">
+        <input class="jaut2" type="checkbox" value="Krikets"/>Krikets
+        </div>
+        <div id="check2">
+        <input class="jaut2" type="checkbox" value="Sinhronā peldēšana"/>Sinhronā peldēšana
+        </div>
+        <div id="check3">
+        <input class="jaut2" type="checkbox" value="Boulings"/>Boulings</div>
+        <div id="check4">
+        <input class="jaut2" type="checkbox" value="BMX riteņbraukšana"/>BMX riteņbraukšana</div>
+        <div id="check5">
+        <input class="jaut2" type="checkbox" value="Kerlings"/>Kerlings</div><br>
+        
+        <input type="button" class="prevQ" value="Iepriekšejais jautājums" onclick="prevQuestion('jaut2')">
+        <input type="button" class="nextQ" value="Nākamais jautājums" onclick="nextQuestion('jaut2')">
+    </div>
+
+    <div class="jaut" id="jaut3">
+        <h4>3.jautājums</h4>
+        Kura valsts vasaras olimpiskajās spēlēs ir konkurējusi visvairāk reizes, neuzvarot zelta medaļu?<br>
+        <input id="jaut33" type="text">
+        <br><br>       
+        <input type="button" class="prevQ" value="Iepriekšejais jautājums" onclick="prevQuestion('jaut3')">
+        <input type="button" class="nextQ" value="Nākamais jautājums" onclick="nextQuestion('jaut3')">
+    </div>
+
+    <div class="jaut" id="jaut4">
+        <h4>4.jautājums</h4>
+        Cik spēlētāji no vienas komandas vienlaikus var atrasties uz uzlaukuma spēles laikā?
+        <br><div id="radio1">
+        <input class="jaut4atb" type="radio" name="n4" value="2"/>2</div>
+        <div id="radio2">
+        <input class="jaut4atb" type="radio" name="n4" value="4"/>4</div>
+        <div id="radio3">
+        <input class="jaut4atb" type="radio" name="n4" value="6"/>6</div>
+        <div id="radio4">
+        <input class="jaut4atb" type="radio" name="n4" value="8"/>8</div>
+        <div id="radio5">
+        <input class="jaut4atb" type="radio" name="n4" value="10"/>10</div>
+        <br><br>
+        
+        <input type="button" class="prevQ" value="Iepriekšejais jautājums" onclick="prevQuestion('jaut4')">
+        <input type="button" class="nextQ" value="Nākamais jautājums" onclick="nextQuestion('jaut4')">
+    </div>
+
+    <div class="jaut" id="jaut5">
+        <h4>5.jautājums</h4>
+        Kur norisināsies 2024.gada olimpiskās spēles?<br>
+        <div id="radio51">
+        <input class="jaut5atb" type="radio" name="n5" value="Parīzē">Parīzē
+        </div >
+        <div id="radio52">
+        <input class="jaut5atb" type="radio" name="n5" value="Tokijā">Tokijā
+        </div >
+        <div id="radio53">
+        <input class="jaut5atb" type="radio" name="n5" value="Sidnejā">Sidnejā
+        </div >
+        <div id="radio54">
+        <input class="jaut5atb" type="radio" name="n5" value="Stokholmā">Stokholmā</div>
+        <br>
+       
+        <input type="button" class="prevQ" value="Iepriekšejais jautājums" onclick="prevQuestion('jaut5')">
+         <input type="button" class="nextQ" value="Nākamais jautājums" onclick="nextQuestion('jaut5')">
+    </div>
+
+    <div class="jaut" id="jaut6">
+        <h4>6.jautājums</h4>
+        Kurā/kuros gadā/gados Latvijā notika iihf hokeja čempionāts?<br>
+        <div id="check61">
+        <input class="jaut6" type="checkbox" value="2006.gadā"/>2006.gadā</div>
+        <br><div id="check62">
+        <input class="jaut6" type="checkbox" value="2021.gadā"/>2021.gadā</div>
+        <br><div id="check63">
+        <input class="jaut6" type="checkbox" value="2010.gadā"/>2010.gadā</div>
+        <br><div id="check64">
+        <input class="jaut6" type="checkbox" value="1999.gadā"/>1999.gadā</div>
+        <br><div id="check65">
+        <input class="jaut6" type="checkbox" value="2002.gadā"/>2002.gadā</div>
+        <br>
+        
+        <input type="button" class="prevQ" value="Iepriekšejais jautājums" onclick="prevQuestion('jaut6')">
+        <input type="button" class="nextQ" value="Nākamais jautājums" onclick="nextQuestion('jaut6')">
+    </div>
+
+    <div class="jaut" id="jaut7">
+        <h4>7.jautājums</h4>
+        Kura valsts izcīnija pirmo zeltu eiropas čempionātā basketbolā?<br>
+        <input id="jaut77" type="text" >
+        <br>
+        
+        <input type="button" class="prevQ" value="Iepriekšejais jautājums" onclick="prevQuestion('jaut7')">
+        <input type="button" class="nextQ" value="Nākamais jautājums" onclick="nextQuestion('jaut7')">
+    </div>
+    <div class="jaut" id="jaut8">
+        <h4>8.jautājums</h4>
+        Savelc atbilstošo federāciju ar sporta veidu, ko tā pārstāv:<br>
+        <div class="container">
+            <div>
+                <p>FIBA</p>
+                <div class="div1" id="SatbDrop0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div>
+                <p>ITF</p>
+                <div class="div1" id="SatbDrop1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div>
+                <p>FIVB</p>
+                <div class="div1" id="SatbDrop2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div>
+                <p>IIHF</p>
+                <div class="div1" id="SatbDrop3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+        </div>
+            <div class="divAtbildes" id="Satb0" draggable="true" ondragstart="drag(event)">
+                Basketbols
+            </div>
+            <div class="divAtbildes" id="Satb1" draggable="true" ondragstart="drag(event)">
+                Teniss
+            </div>
+            <div class="divAtbildes" id="Satb2" draggable="true" ondragstart="drag(event)">
+                Volejbols
+            </div>
+            <div class="divAtbildes" id="Satb3" draggable="true" ondragstart="drag(event)">
+                Hokejs
+            </div>
+        <br><br>
+        <input type="button" class="prevQ" value="Iepriekšejais jautājums" onclick="prevQuestion('jaut8')">
+        <input type="button" class="nextQ" value="Nākamais jautājums" onclick="nextQuestion('jaut8')">
+    </div>
+
+    <div class="jaut" id="jaut9">
+        <h4>9.jautājums</h4>
+        Kura valsts ir izcīnījusi visvairāk zelta medaļas starptautiskajā hokeja čempionātā?<br>
+        <div id="radio91">
+        <input class="jaut9atb" type="radio" name="n9" value="Kanāda"/>Kanāda</div>
+        <br><div id="radio92">
+        <input class="jaut9atb" type="radio" name="n9" value="ASV"/>ASV</div>
+        <br><div id="radio93">
+        <input class="jaut9atb" type="radio" name="n9" value="Krievija"/>Krievija</div>
+        <br><div id="radio94">
+        <input class="jaut9atb" type="radio" name="n9" value="Ķīna"/>Ķīna</div>
+        <br>
+
+        
+        <input type="button" class="prevQ" value="Iepriekšejais jautājums" onclick="prevQuestion('jaut9')">
+        <input type="button" class="nextQ" value="Nākamais jautājums" onclick="nextQuestion('jaut9')">
+    </div>
+
+    <div class="jaut" id="jaut10">
+        <h4>10.jautājums</h4>
+        Kuras Latvijas komandas laukumā ir sastopams šis lūsis?<br>
+        <img src="https://bit.ly/3wuVrkQ* " alt="lūsis" id="img2">
+        <form name="forma2">
+            <input id="jaut10atb" type="text" maxlength="50">
+        </form>
+
+        
+        <input type="button" class="prevQ" value="Iepriekšejais jautājums" onclick="prevQuestion('jaut10')">
+        <input type="button" class="nextQ" value="Nākamais jautājums" onclick="nextQuestion('jaut10')">
+    </div>
+
+    <div class="jaut" id="jaut11">
+        <h4>11.jautājums</h4>
+        Ievelc katra sportista bildi pie attiecīgā sportista vārda!<br>
+        <div class="container">
+            <div>
+                <p>Kristaps Porziņģis</p>
+                <div class="div1" id="drop0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div>
+                <p>Rodions Kurucs</p>
+                <div class="div1" id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div>
+                <p>Andris Biedriņš</p>
+                <div class="div1" id="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div>
+                <p>Dāvis Bertāns</p>
+                <div class="div1" id="drop3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag0" src="https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY5OTQ3OTA4MDIyNDc4MjAx/kristaps-porzingis-mavericks-new.jpg" draggable="true" ondragstart="drag(event)" width="100" height="100">
+            </div>
+            <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag3" src="https://pic.la.lv/2019/10/Webp.net-resizeimage-34.jpg" draggable="true" ondragstart="drag(event)" width="100" height="100">
+            </div>
+            <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag1" src="https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY4MDA2OTUyMTc4MjMwNTQ1/rodions-kurucs-assault-netsjpg.jpg" draggable="true" ondragstart="drag(event)" width="100" height="100">
+            </div>
+            <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag2" src="https://cdn.vox-cdn.com/thumbor/-yLJqhlXCGWGieWJjQUrYRUDOwI=/0x110:2876x2027/1400x1400/filters:focal(0x110:2876x2027):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/15966309/20130130_kkt_sh5_223.0.jpg" draggable="true" ondragstart="drag(event)" width="100" height="100">
+            </div>
+        </div>
+        <br>
+        <input type="button" class="nextQ" value="Nākamais jautājums" onclick="nextQuestion('jaut11')">
+        <input type="button" class="prevQ" value="Iepriekšejais jautājums" onclick="prevQuestion('jaut11')">
+    </div>
+
+    <div class="jaut" id="jaut12">
+        <h4>12.jautājums</h4>
+        Cik medaļas Latvija ir izcīnījusi olimpiskajās spēlēs?<br>
+        <form name="forma">
+            <label for id="k1">Zelta:</label>
+            <input id="jaut12atb1" type="text" maxlength="3">
+            <br>
+            <label for id="k2">Sudraba:</label>
+            <input id="jaut12atb2" type="text" maxlength="3">
+            <br>
+            <label for id="k3">Bronzas:</label>
+            <input id="jaut12atb3" type="text" maxlength="3">
+            <br>
+        </form>
+
+        <input type="button" class="nextQ" value="Nākamais jautājums" onclick="nextQuestion('jaut12')">
+        <input type="button" class="prevQ" value="Iepriekšejais jautājums" onclick="prevQuestion('jaut12')">
+    </div>
+
+    <div class="jaut" id="jaut13">
+        <h4>13.jautājums</h4>
+        Kurš bija pirmais latviešu spēlētājs nba?<br>
+        <form name="forma">
+            <br>
+            <input id="jaut13atb" type="text" maxlength="50">
+            <br>
+        </form>
+
+        <input type="button" class="nextQ" value="Nākamais jautājums" onclick="nextQuestion('jaut13')">
+        <input type="button" class="prevQ" value="Iepriekšejais jautājums" onclick="prevQuestion('jaut13')">
+    </div>
+
+    <div class="jaut" id="jaut14">
+        <h4>14.jautājums</h4>
+        Patiesi vai nepatiesi? 2016.gada Vasaras olimpiskajās spēlēs Latvija neieguva nevienu godalgoto medaļu<br>
+        <input class="jaut14atb" type="radio" name="n14" value="Patiesi"/>Patiesi
+        <br>
+        <input class="jaut14atb" type="radio" name="n14" value="Aplami"/>Aplami
+        <br>
+
+        <input type="button" class="nextQ" value="Nākamais jautājums" onclick="nextQuestion('jaut14')">
+        <input type="button" class="prevQ" value="Iepriekšejais jautājums" onclick="prevQuestion('jaut14')">
+    </div>
+
+    <div class="jaut" id="jaut15">
+        <h4>15.jautājums</h4>
+        Kopš kura gada Latvijas hokeja izlase ir elites divīzijā?<br>
+        <form name="forma">
+            <input id="jaut15atb" type="text" maxlength="50">
+            <br>
+        </form>
+
+        <input id="beiguPoga" type="button" class="nextQ" value="Pabeigt testu" onclick="pabeigtTestu()">
+        <input type="button" class="prevQ" value="Iepriekšejais jautājums" onclick="prevQuestion('jaut15')">
+    </div>
+    <div id="jaut16">
+        <h1 id="rezultaats_teksts"></h1>
+        <table>
+            <tr>
+                <th>Uzdevums</th>
+                <th>Punktu skaits</th>
+                <th>Iegūto punktu skaits</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>5</td>
+                <td id="tabula1"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td id="tabula2"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>1</td>
+                <td id="tabula3"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>1</td>
+                <td id="tabula4"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>1</td>
+                <td id="tabula5"></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>2</td>
+                <td id="tabula6"></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>1</td>
+                <td id="tabula7"></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>4</td>
+                <td id="tabula8"></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>1</td>
+                <td id="tabula9"></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>1</td>
+                <td id="tabula10"></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>4</td>
+                <td id="tabula11"></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>3</td>
+                <td id="tabula12"></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>1</td>
+                <td id="tabula13"></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>1</td>
+                <td id="tabula14"></td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>1</td>
+                <td id="tabula15"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+    
+
+</body>
+</html>
