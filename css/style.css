@@ -1,0 +1,159 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/background.jpg");
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.nav {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    height: 70px;
+    border: 10px solid #e2e5ed;
+    background-color: #e2e5ed;
+}
+
+.nav__timer {
+    display: block;
+}
+
+.nav__buttons {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 auto;
+}
+
+.article__question {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.article__buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    gap: 15px;
+}
+
+.answer {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.DragAndDrop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: max-content;
+}
+
+.section {
+    margin: 2rem;
+}
+
+.main__test {
+    border: 10px solid #e2e5ed;
+    background-color: white;
+}
+
+.section__intro {
+    padding: 15px;
+}
+
+.btn-start {
+    position: relative;
+    left: 30%;
+    width: 40%;
+    font-family: "Trebuchet MS", sans-serif;
+    border: 1px solid gray;
+    background-color: #e2e5ed;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn-start:hover {
+    background-color: gray;
+    border-color: black;
+}
+
+.btn-nav {
+    border: 1px solid black;
+    border-radius: 0px;
+    background-color: #e2e5ed;
+    width: 4.5%;
+    margin: 0.45%;
+    height: 25px;
+}
+
+.btn-nav:hover {
+    border-color: red;
+    border-width: 3px;
+    position: relative;
+}
+
+.question__image {
+    position: relative;
+    display: block;
+    width: 150px;
+}
+
+.container__drag,
+.container__drop {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #aaaaaa;
+}
+
+.container__drag {
+    border: 1px solid gray;
+}
+
+.container__drop {
+    display: flex;
+    justify-content: center;
+}
+
+.article__results {
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+    width: 30px;
+}
+
+th {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+p {
+    margin: 0;
+}

@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport Test</title>
+    <link type="text/css" rel="stylesheet" href="./css//normalize.css" />
+    <link type="text/css" rel="stylesheet" href="./css/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="nav__timer"></div>
+        <div class="nav__buttons">
+          <input
+            type="button"
+            class="btn btn-nav"
+            value="1"
+            onclick="Question(1)"
+          />
+          <input
+            type="button"
+            class="btn btn-nav"
+            value="2"
+            onclick="Question(2)"
+          />
+          <input
+            type="button"
+            class="btn btn-nav"
+            value="3"
+            onclick="Question(3)"
+          />
+          <input
+            type="button"
+            class="btn btn-nav"
+            value="4"
+            onclick="Question(4)"
+          />
+          <input
+            type="button"
+            class="btn btn-nav"
+            value="5"
+            onclick="Question(5)"
+          />
+          <input
+            type="button"
+            class="btn btn-nav"
+            value="6"
+            onclick="Question(6)"
+          />
+          <input
+            type="button"
+            class="btn btn-nav"
+            value="7"
+            onclick="Question(7)"
+          />
+          <input
+            type="button"
+            class="btn btn-nav"
+            value="8"
+            onclick="Question(8)"
+          />
+          <input
+            type="button"
+            class="btn btn-nav"
+            value="9"
+            onclick="Question(9)"
+          />
+          <input
+            type="button"
+            class="btn btn-nav"
+            value="10"
+            onclick="Question(10)"
+          />
+          <input
+            type="button"
+            class="btn btn-nav"
+            value="11"
+            onclick="Question(11)"
+          />
+          <input
+            type="button"
+            class="btn btn-nav"
+            value="12"
+            onclick="Question(12)"
+          />
+          <input
+            type="button"
+            class="btn btn-nav"
+            value="13"
+            onclick="Question(13)"
+          />
+          <input
+            type="button"
+            class="btn btn-nav"
+            value="14"
+            onclick="Question(14)"
+          />
+          <input
+            type="button"
+            class="btn btn-nav"
+            value="15"
+            onclick="Question(15)"
+          />
+          <input
+            type="button"
+            class="btn btn-nav"
+            value="R"
+            onclick="Question(16)"
+          />
+        </div>
+      </nav>
+
+      <main class="main main__test">
+        <section class="section main__section">
+          <article class="article article__intro">
+            <header>
+              <h1>Sport Quiz</h1>
+              <h2>What do you know about the sport?</h2>
+            </header>
+            <div class="article__container">
+              <p>
+                Bieži vien var dzirdēt daudzus cilvēkus uzdodam sevi par "sporta
+                guru". Iespējams pats kādreiz esi par tādu uzdevies. Izpildi šo
+                testu, lai pārliecinātos par to, kādas ir tavas sporta zināšanas
+              </p>
+              <span>Testa noteikumi:</span>
+              <ul>
+                <li>Testā ir 15 jautājumi</li>
+                <li>Laika limits: 30 minūtes</li>
+                <li>
+                  Testā ir iespējams brīvi pārvietoties un atgriezties pie
+                  iepriekšējām atbildēm, lai tās labotu
+                </li>
+              </ul>
+            </div>
+            <input
+              class="btn btn-start"
+              type="button"
+              value="Mēģināt izpildīt testu"
+              onclick="beginTest()"
+            />
+          </article>
+
+          <article class="article__question" id="Question1">
+            <div class="header">
+              <h4>1.jautājums</h4>
+              <p>
+                Kuru kontinentu simbolizē katrs no olimpiskā karoga gredzeniem?
+              </p>
+            </div>
+            <img
+              src="https://i.ibb.co/N2VssKj/Screenshot-2021-05-27-at-15-31-17.png"
+              alt="Olimpiskais karogs"
+              class="question__image"
+            />
+            <div class="form__container">
+              <div class="answer">
+                <label for="Question1-1">Zils:</label>
+                <input id="Question1-1" type="text" maxlength="50" />
+              </div>
+
+              <div class="answer">
+                <label for="Question1-2">Melns:</label>
+                <input id="Question1-2" type="text" maxlength="50" />
+              </div>
+
+              <div class="answer">
+                <label for="Question1-3">Sarkans:</label>
+                <input id="Question1-3" type="text" maxlength="50" />
+              </div>
+
+              <div class="answer">
+                <label for="Question1-4">Dzeltens:</label>
+                <input id="Question1-4" type="text" maxlength="50" />
+              </div>
+
+              <div class="answer">
+                <label for="Question1-5">Zaļš:</label>
+                <input id="Question1-5" type="text" maxlength="50" />
+              </div>
+            </div>
+
+            <div class="article__buttons">
+              <div></div>
+              <input
+                type="button"
+                class="btn btn-next-question"
+                value="Next question"
+                onclick="nextQuestion(1)"
+              />
+            </div>
+          </article>
+
+          <article class="article__question" id="Question2">
+            <div class="header">
+              <h4>2.jautājums</h4>
+              <p>
+                Kuri no šiem sporta veidiem nav iekļauts/iekļauti olimpiskajās
+                spēlēs?
+              </p>
+            </div>
+
+            <div class="form__container">
+              <div class="answer">
+                <label for="Question2-1">Krikets</label>
+                <input
+                  id="Question2-1"
+                  type="checkbox"
+                  value="Krikets"
+                />
+              </div>
+
+              <div class="answer">
+                <label for="Question2-2">Sinhronā peldēšana</label>
+                <input
+                  id="Question2-2"
+                  type="checkbox"
+                  value="Sinhronā peldēšana"
+                />
+              </div>
+
+              <div class="answer">
+                <label for="Question2-3">Boulings</label>
+                <input
+                  id="Question2-3"
+                  type="checkbox"
+                  value="Boulings"
+                />
+              </div>
+
+              <div class="answer">
+                <label for="Question2-4">BMX riteņbraukšana</label>
+                <input
+                  id="Question2-4"
+                  type="checkbox"
+                  value="BMX riteņbraukšana"
+                />
+              </div>
+
+              <div class="answer">
+                <label for="Question2-5">Kerlings</label>
+                <input
+                  id="Question2-5"
+                  type="checkbox"
+                  value="Kerlings"
+                />
+              </div>
+            </div>
+
+            <div class="article__buttons">
+              <input
+                type="button"
+                class="btn btn-prev-question"
+                value="Previous question"
+                onclick="prevQuestion(2)"
+              />
+              <input
+                type="button"
+                class="btn btn-next-question"
+                value="Next question"
+                onclick="nextQuestion(2)"
+              />
+            </div>
+          </article>
+
+          <article class="article__question" id="Question3">
+            <div class="header">
+              <h4>3.jautājums</h4>
+              <p>
+                Kura valsts vasaras olimpiskajās spēlēs ir konkurējusi visvairāk
+                reizes, neuzvarot zelta medaļu?
+              </p>
+            </div>
+            <div class="form__container">
+              <div class="answer">
+                <input id="Question3-1" type="text" maxlength="50" />
+              </div>
+            </div>
+
+            <div class="article__buttons">
+              <input
+                type="button"
+                class="btn btn-prev-question"
+                value="Previous question"
+                onclick="prevQuestion(3)"
+              />
+
+              <input
+                type="button"
+                class="btn btn-next-question"
+                value="Next question"
+                onclick="nextQuestion(3)"
+              />
+            </div>
+          </article>
+
+          <article class="article__question" id="Question4">
+            <div class="header">
+              <h4>4.jautājums</h4>
+              <p>
+                Cik spēlētāji no vienas komandas vienlaikus var atrasties uz
+                uzlaukuma spēles laikā?
+              </p>
+            </div>
+
+            <div class="form__container">
+              <div class="answer">
+                <label for="Question4-1">2</label>
+                <input
+                  id="Question4-1"
+                  type="radio"
+                  value="2"
+                  name="count"
+                />
+              </div>
+
+              <div class="answer">
+                <label for="Question4-2">4</label>
+                <input
+                  id="Question4-2"
+                  type="radio"
+                  value="4"
+                  name="count"
+                />
+              </div>
+
+              <div class="answer">
+                <label for="Question4-3">6</label>
+                <input
+                  id="Question4-3"
+                  type="radio"
+                  value="6"
+                  name="count"
+                />
+              </div>
+
+              <div class="answer">
+                <label for="Question4-4">8</label>
+                <input
+                  id="Question4-4"
+                  type="radio"
+                  value="8"
+                  name="count"
+                />
+              </div>
+
+              <div class="answer">
+                <label for="Question4-5">10</label>
+                <input
+                  id="Question4-5"
+                  type="radio"
+                  value="10"
+                  name="count"
+                />
+              </div>
+            </div>
+
+            <div class="article__buttons">
+              <input
+                type="button"
+                class="btn btn-prev-question"
+                value="Previous question"
+                onclick="prevQuestion(4)"
+              />
+              <input
+                type="button"
+                class="btn btn-next-question"
+                value="Next question"
+                onclick="nextQuestion(4)"
+              />
+            </div>
+          </article>
+
+          <article class="article__question" id="Question5">
+            <div class="header">
+              <h4>5.jautājums</h4>
+              <p>Kur norisināsies 2024.gada olimpiskās spēles?</p>
+            </div>
+
+            <div class="form__container">
+              <div class="answer">
+                <label for="Question5-1">Parīzē</label>
+                <input
+                  id="Question5-1"
+                  type="radio"
+                  value="Parīzē"
+                  name="city"
+                />
+              </div>
+
+              <div class="answer">
+                <label for="Question5-2">Tokijā</label>
+                <input
+                  id="Question5-2"
+                  type="radio"
+                  value="Tokijā"
+                  name="city"
+                />
+              </div>
+
+              <div class="answer">
+                <label for="Question5-3">Sidnejā</label>
+                <input
+                  id="Question5-3"
+                  type="radio"
+                  value="Sidnejā"
+                  name="city"
+                />
+              </div>
+
+              <div class="answer">
+                <label for="Question5-4">Stokholmā</label>
+                <input
+                  id="Question5-4"
+                  type="radio"
+                  value="Stokholmā"
+                  name="city"
+                />
+              </div>
+            </div>
+
+            <div class="article__buttons">
+              <input
+                type="button"
+                class="btn btn-prev-question"
+                value="Previous question"
+                onclick="prevQuestion(5)"
+              />
+              <input
+                type="button"
+                class="btn btn-next-question"
+                value="Next question"
+                onclick="nextQuestion(5)"
+              />
+            </div>
+          </article>
+
+          <article class="article__question" id="Question6">
+            <div class="header">
+              <h4>6.jautājums</h4>
+              <p>
+                Kurā/kuros gadā/gados Latvijā notika iihf hokeja čempionāts?
+              </p>
+            </div>
+
+            <div class="form__container">
+              <div class="answer">
+                <label for="Question6-1">2006.gadā</label>
+                <input
+                  id="Question6-1"
+                  type="checkbox"
+                  value="2006.gadā"
+                />
+              </div>
+
+              <div class="answer">
+                <label for="Question6-2">2021.gadā</label>
+                <input
+                  id="Question6-2"
+                  type="checkbox"
+                  value="2021.gadā"
+                />
+              </div>
+
+              <div class="answer">
+                <label for="Question6-3">2010.gadā</label>
+                <input
+                  id="Question6-3"
+                  type="checkbox"
+                  value="2010.gadā"
+                />
+              </div>
+
+              <div class="answer">
+                <label for="Question6-4">1999.gadā</label>
+                <input
+                  id="Question6-4"
+                  type="checkbox"
+                  value="1999.gadā"
+                />
+              </div>
+
+              <div class="answer">
+                <label for="Question6-5">2002.gadā</label>
+                <input
+                  id="Question6-5"
+                  type="checkbox"
+                  value="2002.gadā"
+                />
+              </div>
+            </div>
+
+            <div class="article__buttons">
+              <input
+                type="button"
+                class="btn btn-prev-question"
+                value="Previous question"
+                onclick="prevQuestion(6)"
+              />
+              <input
+                type="button"
+                class="btn btn-next-question"
+                value="Next question"
+                onclick="nextQuestion(6)"
+              />
+            </div>
+          </article>
+
+          <article class="article__question" id="Question7">
+            <div class="header">
+              <h4>7.jautājums</h4>
+              <p>
+                Kura valsts izcīnija pirmo zeltu eiropas čempionātā basketbolā?
+              </p>
+            </div>
+            <div class="form__container">
+              <div class="answer">
+                <input id="Question7-1" type="text" maxlength="50" />
+              </div>
+            </div>
+
+            <div class="article__buttons">
+              <input
+                type="button"
+                class="btn btn-prev-question"
+                value="Previous question"
+                onclick="prevQuestion(7)"
+              />
+
+              <input
+                type="button"
+                class="btn btn-next-question"
+                value="Next question"
+                onclick="nextQuestion(7)"
+              />
+            </div>
+          </article>
+
+          <article class="article__question" id="Question8">
+            <div class="header">
+              <h4>8.jautājums</h4>
+              <p>
+                Savelc atbilstošo federāciju ar sporta veidu, ko tā pārstāv:
+              </p>
+            </div>
+            <div class="form__container DragAndDrop">
+              <div>
+                <p>FIBA</p>
+                <div
+                  class="container__drop"
+                  id="drop8-1"
+                  ondrop="drop(event)"
+                  ondragover="allowDrop(event)"
+                ></div>
+              </div>
+              <div>
+                <p>ITF</p>
+                <div
+                  class="container__drop"
+                  id="drop8-2"
+                  ondrop="drop(event)"
+                  ondragover="allowDrop(event)"
+                ></div>
+              </div>
+              <div>
+                <p>FIVB</p>
+                <div
+                  class="container__drop"
+                  id="drop8-3"
+                  ondrop="drop(event)"
+                  ondragover="allowDrop(event)"
+                ></div>
+              </div>
+              <div>
+                <p>IIHF</p>
+                <div
+                  class="container__drop"
+                  id="drop8-4"
+                  ondrop="drop(event)"
+                  ondragover="allowDrop(event)"
+                ></div>
+              </div>
+            </div>
+            <div class="answer DragAndDrop">
+              <div
+                class="container__drag"
+                id="drag8-1"
+                draggable="true"
+                ondragstart="drag(event)"
+              >
+                Basketbols
+              </div>
+              <div
+                class="container__drag"
+                id="drag8-2"
+                draggable="true"
+                ondragstart="drag(event)"
+              >
+                Teniss
+              </div>
+              <div
+                class="container__drag"
+                id="drag8-3"
+                draggable="true"
+                ondragstart="drag(event)"
+              >
+                Volejbols
+              </div>
+              <div
+                class="container__drag"
+                id="drag8-4"
+                draggable="true"
+                ondragstart="drag(event)"
+              >
+                Hokejs
+              </div>
+            </div>
+
+            <div class="article__buttons">
+              <input
+                type="button"
+                class="btn btn-prev-question"
+                value="Previous question"
+                onclick="prevQuestion(8)"
+              />
+
+              <input
+                type="button"
+                class="btn btn-next-question"
+                value="Next question"
+                onclick="nextQuestion(8)"
+              />
+            </div>
+          </article>
+
+          <article class="article__question" id="Question9">
+            <div class="header">
+              <h4>9.jautājums</h4>
+              <p>
+                Kura valsts ir izcīnījusi visvairāk zelta medaļas
+                starptautiskajā hokeja čempionātā?
+              </p>
+            </div>
+
+            <div class="form__container">
+              <div class="answer">
+                <label for="Question9-1">Kanāda</label>
+                <input
+                  id="Question9-1"
+                  type="radio"
+                  value="Kanāda"
+                  name="country"
+                />
+              </div>
+
+              <div class="answer">
+                <label for="Question9-2">ASV</label>
+                <input
+                  id="Question9-2"
+                  type="radio"
+                  value="ASV"
+                  name="country"
+                />
+              </div>
+
+              <div class="answer">
+                <label for="Question9-3">Ķīna</label>
+                <input
+                  id="Question9-3"
+                  type="radio"
+                  value="Ķīna"
+                  name="country"
+                />
+              </div>
+            </div>
+
+            <div class="article__buttons">
+              <input
+                type="button"
+                class="btn btn-prev-question"
+                value="Previous question"
+                onclick="prevQuestion(9)"
+              />
+              <input
+                type="button"
+                class="btn btn-next-question"
+                value="Next question"
+                onclick="nextQuestion(9)"
+              />
+            </div>
+          </article>
+
+          <article class="article__question" id="Question10">
+            <div class="header">
+              <h4>10.jautājums</h4>
+              <p>Kuras Latvijas komandas laukumā ir sastopams šis lūsis?</p>
+            </div>
+            <img src="https://bit.ly/3wuVrkQ* " alt="Lūsis" class="question__image" />
+            <div class="form__container">
+              <div class="answer">
+                <input id="Question10-1" type="text" maxlength="50" />
+              </div>
+            </div>
+
+            <div class="article__buttons">
+              <input
+                type="button"
+                class="btn btn-prev-question"
+                value="Previous question"
+                onclick="prevQuestion(10)"
+              />
+
+              <input
+                type="button"
+                class="btn btn-next-question"
+                value="Next question"
+                onclick="nextQuestion(10)"
+              />
+            </div>
+          </article>
+
+          <article class="article__question" id="Question11">
+            <div class="header">
+              <h4>11.jautājums</h4>
+              <p>Ievelc katra sportista bildi pie attiecīgā sportista vārda!</p>
+            </div>
+            <div class="form__container DragAndDrop">
+              <div>
+                <p>Kristaps Porziņģis</p>
+                <div
+                  class="container__drop"
+                  id="drop11-1"
+                  ondrop="drop(event)"
+                  ondragover="allowDrop(event)"
+                ></div>
+              </div>
+              <div>
+                <p>Rodions Kurucs</p>
+                <div
+                  class="container__drop"
+                  id="drop11-2"
+                  ondrop="drop(event)"
+                  ondragover="allowDrop(event)"
+                ></div>
+              </div>
+              <div>
+                <p>Andris Biedriņš</p>
+                <div
+                  class="container__drop"
+                  id="drop11-3"
+                  ondrop="drop(event)"
+                  ondragover="allowDrop(event)"
+                ></div>
+              </div>
+              <div>
+                <p>Dāvis Bertāns</p>
+                <div
+                  class="container__drop"
+                  id="drop11-4"
+                  ondrop="drop(event)"
+                  ondragover="allowDrop(event)"
+                ></div>
+              </div>
+            </div>
+            <div class="answer DragAndDrop">
+              <div
+                class="container__drop"
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"
+              >
+                <img
+                  id="drag11-0"
+                  src="https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY5OTQ3OTA4MDIyNDc4MjAx/kristaps-porzingis-mavericks-new.jpg"
+                  draggable="true"
+                  ondragstart="drag(event)"
+                  width="100"
+                  height="100"
+                  alt=""
+                />
+              </div>
+              <div
+                class="container__drop"
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"
+              >
+                <img
+                  id="drag11-3"
+                  src="https://pic.la.lv/2019/10/Webp.net-resizeimage-34.jpg"
+                  draggable="true"
+                  ondragstart="drag(event)"
+                  width="100"
+                  height="100"
+                  alt=""
+                />
+              </div>
+              <div
+                class="container__drop"
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"
+              >
+                <img
+                  id="drag1-1"
+                  src="https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY4MDA2OTUyMTc4MjMwNTQ1/rodions-kurucs-assault-netsjpg.jpg"
+                  draggable="true"
+                  ondragstart="drag(event)"
+                  width="100"
+                  height="100"
+                  alt=""
+                />
+              </div>
+              <div
+                class="container__drop"
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"
+              >
+                <img
+                  id="drag11-2"
+                  src="https://cdn.vox-cdn.com/thumbor/-yLJqhlXCGWGieWJjQUrYRUDOwI=/0x110:2876x2027/1400x1400/filters:focal(0x110:2876x2027):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/15966309/20130130_kkt_sh5_223.0.jpg"
+                  draggable="true"
+                  ondragstart="drag(event)"
+                  width="100"
+                  height="100"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="article__buttons">
+              <input
+                type="button"
+                class="btn btn-prev-question"
+                value="Previous question"
+                onclick="prevQuestion(11)"
+              />
+
+              <input
+                type="button"
+                class="btn btn-next-question"
+                value="Next question"
+                onclick="nextQuestion(11)"
+              />
+            </div>
+          </article>
+
+          <article class="article__question" id="Question12">
+            <div class="header">
+              <h4>12.jautājums</h4>
+              <p>Cik medaļas Latvija ir izcīnījusi olimpiskajās spēlēs?</p>
+            </div>
+            <div class="form__container">
+              <div class="answer">
+                <label for="Question12-1">Zelta</label>
+                <input id="Question12-1" type="number" maxlength="3" />
+              </div>
+
+              <div class="answer">
+                <label for="Question12-2">Sudraba</label>
+                <input id="Question12-2" type="number" maxlength="3" />
+              </div>
+
+              <div class="answer">
+                <label for="Question12-3">Bronzas</label>
+                <input id="Question12-3" type="number" maxlength="3" />
+              </div>
+            </div>
+
+            <div class="article__buttons">
+              <input
+                type="button"
+                class="btn btn-prev-question"
+                value="Previous question"
+                onclick="prevQuestion(12)"
+              />
+
+              <input
+                type="button"
+                class="btn btn-next-question"
+                value="Next question"
+                onclick="nextQuestion(12)"
+              />
+            </div>
+          </article>
+
+          <article class="article__question" id="Question13">
+            <div class="header">
+              <h4>13.jautājums</h4>
+              <p>Kurš bija pirmais latviešu spēlētājs nba?</p>
+            </div>
+            <div class="form__container">
+              <div class="answer">
+                <input id="Question13-1" type="text" />
+              </div>
+            </div>
+
+            <div class="article__buttons">
+              <input
+                type="button"
+                class="btn btn-prev-question"
+                value="Previous question"
+                onclick="prevQuestion(13)"
+              />
+
+              <input
+                type="button"
+                class="btn btn-next-question"
+                value="Next question"
+                onclick="nextQuestion(13)"
+              />
+            </div>
+          </article>
+
+          <article class="article__question" id="Question14">
+            <div class="header">
+              <h4>14.jautājums</h4>
+              <p>
+                Patiesi vai nepatiesi? 2016.gada Vasaras olimpiskajās spēlēs
+                Latvija neieguva nevienu godalgoto medaļu
+              </p>
+            </div>
+
+            <div class="form__container">
+              <div class="answer">
+                <label for="Question14-1">Patiesi</label>
+                <input
+                  id="Question14-1"
+                  type="radio"
+                  value="Patiesi"
+                  name="TrueOfFalse"
+                />
+              </div>
+
+              <div class="answer">
+                <label for="Question14-2">Aplami</label>
+                <input
+                  id="Question14-2"
+                  type="radio"
+                  value="Aplami"
+                  name="TrueOfFalse"
+                />
+              </div>
+            </div>
+
+            <div class="article__buttons">
+              <input
+                type="button"
+                class="btn btn-prev-question"
+                value="Previous question"
+                onclick="prevQuestion(14)"
+              />
+              <input
+                type="button"
+                class="btn btn-next-question"
+                value="Next question"
+                onclick="nextQuestion(14)"
+              />
+            </div>
+          </article>
+
+          <article class="article__question" id="Question15">
+            <div class="header">
+              <h4>15.jautājums</h4>
+              <p>Kopš kura gada Latvijas hokeja izlase ir elites divīzijā?</p>
+            </div>
+            <div class="form__container">
+              <div class="answer">
+                <input id="Question15-1" type="text" />
+              </div>
+            </div>
+
+            <div class="article__buttons">
+              <input
+                type="button"
+                class="btn btn-prev-question"
+                value="Previous question"
+                onclick="prevQuestion(15)"
+              />
+
+              <input
+                type="button"
+                class="btn btn-finish"
+                value="Finish"
+                onclick="finishTest()"
+              />
+            </div>
+          </article>
+
+          <article class="article__results" id="results">
+            <h1 id="results__label"></h1>
+            <table>
+              <tr>
+                <th>Uzdevums</th>
+                <th>Punktu skaits</th>
+                <th>Iegūto punktu skaits</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>5</td>
+                <td id="result1"></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>2</td>
+                <td id="result2"></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>1</td>
+                <td id="result3"></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>1</td>
+                <td id="result4"></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>1</td>
+                <td id="result5"></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>2</td>
+                <td id="result6"></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>1</td>
+                <td id="result7"></td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>4</td>
+                <td id="result8"></td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>1</td>
+                <td id="result9"></td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>1</td>
+                <td id="result10"></td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>4</td>
+                <td id="result11"></td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>3</td>
+                <td id="result12"></td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>1</td>
+                <td id="result13"></td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>1</td>
+                <td id="result14"></td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>1</td>
+                <td id="result15"></td>
+              </tr>
+            </table>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
