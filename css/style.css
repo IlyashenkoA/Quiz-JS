@@ -123,12 +123,16 @@ body {
 }
 
 .container__drag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid gray;
 }
 
 .container__drop {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .article__results {
